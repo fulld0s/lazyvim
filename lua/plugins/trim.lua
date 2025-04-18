@@ -2,6 +2,9 @@ return {
   {
     "cappyzawa/trim.nvim",
     lazy = true,
-    opts = {},
+    opts = {
+      -- disable trimming last line
+      trim_last_line = false,
+    },
   },
 }
