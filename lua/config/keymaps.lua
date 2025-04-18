@@ -23,3 +23,7 @@ vim.keymap.set("n", "<C-h>", "<cmd>resize +2<cr>", { desc = "Increase Window Hei
 vim.keymap.set("n", "<C-j>", "<cmd>resize -2<cr>", { desc = "Decrease Window Height" })
 vim.keymap.set("n", "<C-k>", "<cmd>vertical resize -2<cr>", { desc = "Decrease Window Width" })
 vim.keymap.set("n", "<C-l>", "<cmd>vertical resize +2<cr>", { desc = "Increase Window Width" })
+
+-- Switch between buffer tabs
+vim.keymap.set("n", "<M-Left>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev buffer" })
+vim.keymap.set("n", "<M-Right>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next buffer" })
