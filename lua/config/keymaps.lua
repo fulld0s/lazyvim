@@ -2,8 +2,8 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- new tab(buffer)
-vim.keymap.set("n", "<C-t>", "<cmd>tabnew<cr>")
+-- new file (Buffer)
+vim.keymap.set("n", "<C-t>", "<cmd>enew<cr>")
 
 -- moveline
 local moveline = require("moveline")
@@ -13,10 +13,10 @@ vim.keymap.set("v", "<M-Up>", moveline.block_up)
 vim.keymap.set("v", "<M-Down>", moveline.block_down)
 
 -- Move to window using the <ctrl> arrow keys
-vim.keymap.set("n", "<C-Left>", "<C-w>h", { desc = "Go to Left Window", remap = true })
-vim.keymap.set("n", "<C-Down>", "<C-w>j", { desc = "Go to Lower Window", remap = true })
-vim.keymap.set("n", "<C-Up>", "<C-w>k", { desc = "Go to Upper Window", remap = true })
-vim.keymap.set("n", "<C-Right>", "<C-w>l", { desc = "Go to Right Window", remap = true })
+vim.keymap.set("n", "<C-M-Left>", "<C-w>h", { desc = "Go to Left Window", remap = true })
+vim.keymap.set("n", "<C-M-Down>", "<C-w>j", { desc = "Go to Lower Window", remap = true })
+vim.keymap.set("n", "<C-M-Up>", "<C-w>k", { desc = "Go to Upper Window", remap = true })
+vim.keymap.set("n", "<C-M-Right>", "<C-w>l", { desc = "Go to Right Window", remap = true })
 
 -- Resize window using <ctrl> hjkl keys
 vim.keymap.set("n", "<C-h>", "<cmd>resize +2<cr>", { desc = "Increase Window Height" })

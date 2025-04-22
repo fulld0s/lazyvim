@@ -42,8 +42,8 @@ Enable spelling checker by default
 Disable autoformat by default
 ([lua/config/options.lua](https://github.com/fulld0s/lazyvim/blob/cf1be585c94d1950da3bf15b8275f63e84e65937/lua/config/options.lua#L25)).
 
-## Keymap for new buffer tab
-Change the default keymap for creating a new buffer tab
+## Keymap for new window (buffer tab)
+Change the default keymap for creating a new window (buffer tab)
 ([lua/config/keymaps.lua](https://github.com/fulld0s/lazyvim/blob/cf1be585c94d1950da3bf15b8275f63e84e65937/lua/config/keymaps.lua#L5C4-L5C19)).
 
 ## Keymap for moveline
@@ -54,6 +54,7 @@ Change the default keymap for moving lines
 Change the default keymap for (switching between / resizing) windows:
 - [lua/config/keymaps.lua](https://github.com/fulld0s/lazyvim/blob/cf1be585c94d1950da3bf15b8275f63e84e65937/lua/config/keymaps.lua#L15);
 - [lua/config/keymaps.lua](https://github.com/fulld0s/lazyvim/blob/cf1be585c94d1950da3bf15b8275f63e84e65937/lua/config/keymaps.lua#L21).
+- Should be comment: /home/<user>/.local/share/nvim/lazy/LazyVim/lua/lazyvim/config/keymaps.lua:19 (Resize window using <ctrl> arrow keys).
 
 ## Keymap for switching between buffer tabs
 Change the default keymap for switching between buffer tabs
