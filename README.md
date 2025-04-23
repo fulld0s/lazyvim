@@ -42,6 +42,10 @@ Enable spelling checker by default
 Disable autoformat by default
 ([lua/config/options.lua](https://github.com/fulld0s/lazyvim/blob/main/lua/config/options.lua#L25)).
 
+## Diagnostics
+Disable diagnostics by default
+([lua/config/options.lua](https://github.com/fulld0s/lazyvim/blob/main/lua/config/options.lua#L28)).
+
 ## Keymap for new window (buffer tab)
 Change the default keymap for creating a new window (buffer tab)
 ([lua/config/keymaps.lua](https://github.com/fulld0s/lazyvim/blob/main/lua/config/keymaps.lua#L5C4-L5C19)).
@@ -60,4 +64,11 @@ Change the default keymap for (switching between / resizing) windows:
 ## Keymap for switching between buffer tabs
 Change the default keymap for switching between buffer tabs
 ([lua/config/keymaps.lua](https://github.com/fulld0s/lazyvim/blob/main/lua/config/keymaps.lua#L27)).
+([lua/config/keymaps.lua](lua/config/keymaps.lua#L27)).
 
+## Toggle floating terminal
+Run toggle floating terminal in the current file directory by pressing \<F4\>
+([lua/plugins/tokyonight.lua](lua/plugins/toggleterm.lua)).
+
+## Copy absolute path of the current file to clipboard
+([lua/config/keymaps.lua](lua/config/keymaps.lua#L31)).

@@ -27,3 +27,6 @@ vim.keymap.set("n", "<C-l>", "<cmd>vertical resize +2<cr>", { desc = "Increase W
 -- Switch between buffer tabs
 vim.keymap.set("n", "<M-Left>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev buffer" })
 vim.keymap.set("n", "<M-Right>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next buffer" })
+
+-- Copy absolute path of the current file to clipboard
+vim.keymap.set("n", "<F3>", "<cmd>let @+ = expand(\"%:p:h\")<cr>")

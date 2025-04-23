@@ -24,3 +24,6 @@ vim.opt.spell = true
 
 -- Disable autoformat
 vim.g.autoformat = false
+
+-- Disable diagnostics
+vim.diagnostic.enable(false)
