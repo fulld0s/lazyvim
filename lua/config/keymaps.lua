@@ -30,3 +30,6 @@ vim.keymap.set("n", "<M-Right>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next 
 
 -- Copy absolute path of the current file to clipboard
 vim.keymap.set("n", "<F3>", "<cmd>let @+ = expand(\"%:p:h\")<cr>")
+
+-- Copy name of the current file to clipboard
+vim.keymap.set("n", "<F2>", "<cmd>let @+ = expand(\"%:t\")<cr>")

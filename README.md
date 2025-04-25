@@ -70,4 +70,13 @@ Run toggle floating terminal in the current file directory by pressing \<F4\>
 ([lua/plugins/tokyonight.lua](lua/plugins/toggleterm.lua)).
 
 ## Copy absolute path of the current file to clipboard
-([lua/config/keymaps.lua](lua/config/keymaps.lua#L31)).
+[lua/config/keymaps.lua](lua/config/keymaps.lua#L31)
+
+## Copy name of the current file to clipboard
+[lua/config/keymaps.lua](lua/config/keymaps.lua#L35)
+
+## Disable italic for font
+[lua/plugins/tokyonight.lua](lua/plugins/toggleterm.lua#L8)
+
+## Change vim-illuminate provider to regex
+[lua/plugins/vim-illuminate.lua](lua/plugins/vim-illuminate.lua)
