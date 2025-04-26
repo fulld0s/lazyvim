@@ -27,3 +27,6 @@ vim.g.autoformat = false
 
 -- Disable diagnostics
 vim.diagnostic.enable(false)
+
+-- Disable all animations
+vim.g.snacks_animate = false

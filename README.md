@@ -46,6 +46,10 @@ Disable autoformat by default
 Disable diagnostics by default
 ([lua/config/options.lua](lua/config/options.lua#L28)).
 
+## Animations
+Disable all animations by default
+([lua/config/options.lua](lua/config/options.lua#L31)).
+
 ## Keymap for new window (buffer tab)
 Change the default keymap for creating a new window (buffer tab)
 ([lua/config/keymaps.lua](lua/config/keymaps.lua#L5)).
@@ -57,7 +61,7 @@ Change the default keymap for moving lines
 ## Keymap for (switching between / resizing) windows
 Change the default keymap for (switching between / resizing) windows:
 - [lua/config/keymaps.lua](lua/config/keymaps.lua#L15);
-- [lua/config/keymaps.lua](lua/config/keymaps.lua#L21).
+- [lua/config/keymaps.lua](lua/config/keymaps.lua#L21);
 - Should be comment: /home/\<user\>/.local/share/nvim/lazy/LazyVim/lua/lazyvim/config/keymaps.lua:19
 (-- Resize window using \<ctrl\> arrow keys).
 
