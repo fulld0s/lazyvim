@@ -58,7 +58,7 @@ Change the default keymap for creating a new window (buffer tab)
 Change the default keymap for moving lines
 ([lua/config/keymaps.lua](lua/config/keymaps.lua#L8)).
 
-## Keymap for (switching between / resizing) windows
+## Keymap for (switching between) / (resizing) windows
 Change the default keymap for (switching between / resizing) windows:
 - [lua/config/keymaps.lua](lua/config/keymaps.lua#L15);
 - [lua/config/keymaps.lua](lua/config/keymaps.lua#L21);
@@ -84,3 +84,6 @@ Run toggle floating terminal in the current file directory by pressing \<F4\>
 
 ## Change vim-illuminate provider to regex
 [lua/plugins/vim-illuminate.lua](lua/plugins/vim-illuminate.lua)
+
+## Mouse scrollbar
+[lua/plugins/nvim-scrollview.lua](lua/plugins/nvim-scrollview.lua)
