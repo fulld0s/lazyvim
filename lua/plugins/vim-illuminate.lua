@@ -1,6 +1,6 @@
 return {
   {
-    "RRthy/vim-illuminate",
+    "RRethy/vim-illuminate",
     enable = true,
     event = "CursorHold",
     opts = {
