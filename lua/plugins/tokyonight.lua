@@ -4,7 +4,7 @@ return {
     "folke/tokyonight.nvim",
     lazy = true,
     opts = {
-      style = "storm",
+      style = "moon",
       -- Disable italic
       styles = {
         keywords = { italic = false },

@@ -50,6 +50,10 @@ Disable diagnostics by default
 Disable all animations by default
 ([lua/config/options.lua](lua/config/options.lua#L31)).
 
+## Mini pairs
+Disable mini pairs by default
+([lua/config/options.lua](lua/config/options.lua#L34)).
+
 ## Keymap for new window (buffer tab)
 Change the default keymap for creating a new window (buffer tab)
 ([lua/config/keymaps.lua](lua/config/keymaps.lua#L5)).
@@ -87,3 +91,8 @@ Run toggle floating terminal in the current file directory by pressing \<F4\>
 
 ## Mouse scrollbar
 [lua/plugins/nvim-scrollview.lua](lua/plugins/nvim-scrollview.lua)
+
+## Org-list
+[hamidi-dev/org-list.nvim](https://github.com/hamidi-dev/org-list.nvim)
+<br>
+[lua/plugins/org-list.lua](lua/plugins/org-list.lua)

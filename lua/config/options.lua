@@ -30,3 +30,6 @@ vim.diagnostic.enable(false)
 
 -- Disable all animations
 vim.g.snacks_animate = false
+
+-- Disable mini pairs
+vim.g.minipairs_disable = true
