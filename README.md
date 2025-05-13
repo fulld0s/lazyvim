@@ -7,8 +7,9 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 # ⚙️ Custom changes
 
 ## Colorscheme
-Change the default colorscheme to tokyonight-storm
-([lua/plugins/tokyonight.lua](lua/plugins/tokyonight.lua)).
+Set colorscheme as catppuccin macchiato:
+- [lua/plugins/catppuccin.lua](lua/plugins/catppuccin.lua)
+- [lua/plugins/colorscheme.lua](lua/plugins/colorscheme.lua)
 
 ## Vertical line
 - Default colorcolumn to 100 chars
