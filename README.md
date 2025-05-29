@@ -32,7 +32,7 @@ Enable winbar by default
 ([lua/config/options.lua](lua/config/options.lua#L16)).
 
 ## Row wrapping
-Enable row wrapping by default
+Disable row wrapping by default
 ([lua/config/options.lua](lua/config/options.lua#L19)).
 
 ## Check spelling
