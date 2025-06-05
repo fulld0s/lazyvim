@@ -8,7 +8,7 @@ return {
     require("org-list").setup({
       -- your config here (optional)
       checkbox_toggle = {
-          filetypes = { "org", "markdown", "" }
+          filetypes = { "org", "markdown", "", "txt" }
         }
     })
   end
