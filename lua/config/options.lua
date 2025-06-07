@@ -17,7 +17,7 @@ vim.o.guicursor = table.concat({
 vim.opt.winbar = "%=%m %f"
 
 -- row wrapping
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 -- spelling checker
 vim.opt.spell = true
