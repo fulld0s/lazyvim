@@ -32,7 +32,7 @@ Enable winbar by default
 ([lua/config/options.lua](lua/config/options.lua#L16)).
 
 ## Row wrapping
-Disable row wrapping by default
+Enable row wrapping by default
 ([lua/config/options.lua](lua/config/options.lua#L19)).
 
 ## Check spelling
@@ -89,9 +89,6 @@ Run toggle floating terminal in the current file directory by pressing \<F4\>
 
 ## Change vim-illuminate provider to regex
 [lua/plugins/vim-illuminate.lua](lua/plugins/vim-illuminate.lua)
-
-## Mouse scrollbar
-[lua/plugins/nvim-scrollview.lua](lua/plugins/nvim-scrollview.lua)
 
 ## Org-list
 [hamidi-dev/org-list.nvim](https://github.com/hamidi-dev/org-list.nvim)
