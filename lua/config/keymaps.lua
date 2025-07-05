@@ -33,3 +33,6 @@ vim.keymap.set("n", "<F3>", "<cmd>let @+ = expand(\"%:p:h\")<cr>")
 
 -- Copy name of the current file to clipboard
 vim.keymap.set("n", "<F2>", "<cmd>let @+ = expand(\"%:t\")<cr>")
+
+-- Row wrapping
+vim.keymap.set("n", "<M-z>", "<cmd>set wrap!<cr>")
