@@ -33,3 +33,11 @@ vim.g.snacks_animate = false
 
 -- Disable mini pairs
 vim.g.minipairs_disable = true
+
+-- Disable auto-continue comments when press Enter
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "*",
+  callback = function()
+    vim.opt.formatoptions:remove({ "r", "o" })
+  end,
+})

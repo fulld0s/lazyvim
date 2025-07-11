@@ -36,3 +36,6 @@ vim.keymap.set("n", "<F2>", "<cmd>let @+ = expand(\"%:t\")<cr>")
 
 -- Row wrapping
 vim.keymap.set("n", "<M-z>", "<cmd>set wrap!<cr>")
+
+-- The selected text is deleted silently (doesn't touch the clipboard)
+vim.keymap.set("x", "p", [["_dP]], { desc = "Paste without overwriting register" })

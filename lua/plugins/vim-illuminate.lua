@@ -1,7 +1,6 @@
 return {
   {
     "RRethy/vim-illuminate",
-    enable = true,
     event = "CursorHold",
     opts = {
       delay = 100,
@@ -12,5 +11,27 @@ return {
         providers = { "regex" },
       },
     },
+    config = function(_, opts)
+      require("illuminate").configure(opts)
+
+      -- Optional: fallback highlights if colorscheme doesn't set them
+      local bg = "#514c49"
+      vim.api.nvim_set_hl(0, "IlluminatedWord", { bg = bg })
+      vim.api.nvim_set_hl(0, "IlluminatedCurWord", { bg = bg })
+      vim.api.nvim_set_hl(0, "IlluminatedWordText", { bg = bg })
+      vim.api.nvim_set_hl(0, "IlluminatedWordRead", { bg = bg })
+      vim.api.nvim_set_hl(0, "IlluminatedWordWrite", { bg = bg })
+
+      -- Reapply on colorscheme change
+      vim.api.nvim_create_autocmd("ColorScheme", {
+        callback = function()
+          vim.api.nvim_set_hl(0, "IlluminatedWord", { bg = bg })
+          vim.api.nvim_set_hl(0, "IlluminatedCurWord", { bg = bg })
+          vim.api.nvim_set_hl(0, "IlluminatedWordText", { bg = bg })
+          vim.api.nvim_set_hl(0, "IlluminatedWordRead", { bg = bg })
+          vim.api.nvim_set_hl(0, "IlluminatedWordWrite", { bg = bg })
+        end,
+      })
+    end,
   },
 }
