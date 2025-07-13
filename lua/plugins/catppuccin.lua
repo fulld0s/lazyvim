@@ -15,6 +15,9 @@ return {
       color_overrides = {
         all = {
           lavender = "#DC8A78",
+          base = "#101216",
+          mantle = "#101216",
+          crust = "#101216",
         },
       },
     },
