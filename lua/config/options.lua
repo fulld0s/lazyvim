@@ -41,3 +41,9 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt.formatoptions:remove({ "r", "o" })
   end,
 })
+
+-- wrap text using textwidth
+vim.opt.formatoptions:append("t")
+
+-- lines wrap at 80 chars
+vim.opt.textwidth = 80

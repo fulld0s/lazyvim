@@ -36,3 +36,13 @@ vim.api.nvim_create_autocmd({ "BufLeave", "FocusLost", "WinLeave" }, {
     vim.opt.relativenumber = false
   end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "markdown", "text", "gitcommit" },
+  callback = function()
+    vim.opt_local.formatoptions:append("t")
+    vim.opt_local.textwidth = 80
+    vim.opt_local.formatexpr = ""
+    vim.opt_local.formatprg = ""  -- fallback to internal gq formatter
+  end,
+})
