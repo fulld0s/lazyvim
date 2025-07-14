@@ -13,35 +13,11 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
--- Enable relative line numbers only in Normal and Visual modes
-vim.api.nvim_create_autocmd({ "InsertEnter" }, {
-  callback = function()
-    vim.opt.relativenumber = false
-  end,
-})
-vim.api.nvim_create_autocmd({ "InsertLeave" }, {
-  callback = function()
-    vim.opt.relativenumber = true
-  end,
-})
-vim.api.nvim_create_autocmd({ "BufEnter", "FocusGained", "WinEnter" }, {
-  callback = function()
-    if vim.fn.mode() ~= "i" then
-      vim.opt.relativenumber = true
-    end
-  end,
-})
-vim.api.nvim_create_autocmd({ "BufLeave", "FocusLost", "WinLeave" }, {
-  callback = function()
-    vim.opt.relativenumber = false
-  end,
-})
-
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "markdown", "text", "gitcommit" },
   callback = function()
     vim.opt_local.formatoptions:append("t")
-    vim.opt_local.textwidth = 80
+    vim.opt_local.textwidth = 100
     vim.opt_local.formatexpr = ""
     vim.opt_local.formatprg = ""  -- fallback to internal gq formatter
   end,
