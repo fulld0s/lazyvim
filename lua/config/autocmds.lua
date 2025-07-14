@@ -12,3 +12,27 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.colorcolumn = "73" -- vertical line at 73 to indicate 72-char limit
   end,
 })
+
+-- Enable relative line numbers only in Normal and Visual modes
+vim.api.nvim_create_autocmd({ "InsertEnter" }, {
+  callback = function()
+    vim.opt.relativenumber = false
+  end,
+})
+vim.api.nvim_create_autocmd({ "InsertLeave" }, {
+  callback = function()
+    vim.opt.relativenumber = true
+  end,
+})
+vim.api.nvim_create_autocmd({ "BufEnter", "FocusGained", "WinEnter" }, {
+  callback = function()
+    if vim.fn.mode() ~= "i" then
+      vim.opt.relativenumber = true
+    end
+  end,
+})
+vim.api.nvim_create_autocmd({ "BufLeave", "FocusLost", "WinLeave" }, {
+  callback = function()
+    vim.opt.relativenumber = false
+  end,
+})
