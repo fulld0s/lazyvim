@@ -46,3 +46,30 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.formatprg = ""  -- fallback to internal gq formatter
   end,
 })
+
+-- ASCII Box for Visual Selection
+function _G.ascii_box()
+  local s_row = vim.fn.line("'<")
+  local e_row = vim.fn.line("'>")
+  local lines = vim.api.nvim_buf_get_lines(0, s_row - 1, e_row, false)
+  -- Determine the longest line
+  local max_len = 0
+  for _, l in ipairs(lines) do
+    if #l > max_len then max_len = #l end
+  end
+  -- Build boxed lines
+  local top = "+" .. string.rep("-", max_len + 2) .. "+"
+  local bottom = top
+  local boxed = {}
+
+  table.insert(boxed, top)
+  for _, line in ipairs(lines) do
+    local pad = string.rep(" ", max_len - #line)
+    table.insert(boxed, "| " .. line .. pad .. " |")
+  end
+  table.insert(boxed, bottom)
+  -- Replace lines in buffer
+  vim.api.nvim_buf_set_lines(0, s_row - 1, e_row, false, boxed)
+end
+-- Optional keymap
+vim.keymap.set("v", "<leader>ab", ":<C-u>lua ascii_box()<CR>", { desc = "ASCII Box" })
